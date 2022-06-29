@@ -1,0 +1,32 @@
+linters-settings:
+  varnamelen:
+    min-name-length: 1
+linters:
+  enable-all: true
+  disable:
+    - bodyclose
+    - contextcheck
+    - dupl
+    - exhaustivestruct
+    - gochecknoinits
+    - gochecknoglobals
+    - golint
+    - interfacer
+    - ireturn
+    - maligned
+    - nilerr
+    - noctx
+    - rowserrcheck
+    - scopelint
+    - structcheck
+    - sqlclosecheck
+    - tagliatelle
+    - tparallel
+    - unparam
+    - wastedassign
+    - wrapcheck
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters: 
+        - funlen
