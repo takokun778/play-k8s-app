@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package alpha.v1;
+
+option go_package = "connect/gen/alpha/v1;alphav1";
+
+message InfoRequest {
+    string message = 1;
+}
+
+message InfoResponse {
+    string message = 1;
+}
+
+service AlphaService {
+    rpc Info(InfoRequest) returns (InfoResponse) {}
+}
