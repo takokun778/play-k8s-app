@@ -8,9 +8,12 @@ linters:
     - contextcheck
     - dupl
     - exhaustivestruct
+    - exhaustruct
+    - gci
     - gochecknoinits
     - gochecknoglobals
     - golint
+    - gomoddirectives
     - interfacer
     - ireturn
     - maligned

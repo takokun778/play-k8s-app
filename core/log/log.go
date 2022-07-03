@@ -37,6 +37,6 @@ func Middleware(next http.Handler) http.Handler {
 
 		elapsed := time.Since(start)
 
-		log.Sugar().Infof("%s %s %d %s", r.Method, r.URL, lrw.statusCode, elapsed)
+		log.Sugar().Infof("%s %s %s %d %s", r.Proto, r.Method, r.URL, lrw.statusCode, elapsed)
 	})
 }
